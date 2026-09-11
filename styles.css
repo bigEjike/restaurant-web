@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav section */
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 20px;
+}
+
+.header-logo{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-p{
+    font-size: 15px;
+    color: chocolate;
+    font-style: normal;
+}
+
+.nav-links{
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    gap: 20px;
+    color: chocolate;
+}
+.nav-links :hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.header-button{
+    padding:  10px;
+    color: white;
+    background-color: chocolate;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header-button:hover{
+    background: rgb(235, 134, 61);
+    color: white;
+}
+
+/* hero section */
+
+.hero{
+    min-height: 600px;
+    background-image: url(IMG-20260908-WA0000.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: chocolate;
+    margin: 20px 0;
+}
+.divider span {
+    width: 100px;
+    height: 1px;
+    background: chocolate;
+}
+h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 85px;
+}
+h2{
+    font-family: sans-serif;
+    color: white;
+    font-size: 70px;
+}
+.hero-p_1{
+    font-family: sans-serif;
+    color: chocolate;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.hero-text{
+    line-height: 0.95;
+}
+.hero-p_2{
+    font-family: sans-serif;
+    color: chocolate;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-button_1{
+    padding: 15px;
+    background-color: chocolate;
+    color: white;
+    border: 3px solid chocolate;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-button_1:hover{
+    background: rgb(235, 134, 61);
+    color: white;
+}
+
+.hero-button_2{
+    padding: 15px;
+    background-color: white;
+    color: chocolate;
+    border: 3px solid chocolate;
+    border-radius: 5px;
+    cursor: pointer;
+    .hero-button_2_text{
+        font-weight: bold;
+    }
+}
+.hero-button_2:hover{
+    background: rgb(243, 221, 206);
+    color: chocolate;
+}
+
+/* services  */
+
+h3{
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: chocolate;
+}
+.services{
+    padding: 25px;
+}
+
+.services-grid{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-right: 2px solid chocolate;
+    padding: 35px 10%;
+    gap: 10px;
+}
+.card:last-child{
+    border-right: none;
+}
+.card-icon{
+    font-size: 30px;
+    color: chocolate;
+    margin-bottom: 10px;
+}
+
+/* specialties */
+
+.specialties{
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.specialties-title{
+    font-family: sans-serif;
+    color: rgb(237, 146, 81);
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.food-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    padding: 20px;
+    gap: 30px;
+
+}
+
+.food-card_image{
+    height: 200px;
+    width: 200px;
+}
+
+.food-card{
+    background-color: whitesmoke;
+
+    h4{
+        color: chocolate;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+
+    align-items: center;
+    padding: 40px;
+
+    .food-card_text{
+        align-items: center;   
+    }
+
+    .food-card_price{
+        color: chocolate;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    border: 1px solid chocolate;
+    border-radius: 8px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.food-card:hover{
+    box-shadow: 6px 3px 8px 4px chocolate;
+}
+
+/* footer */
+.footer{
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: chocolate;
+}
+
+/* ==================================
+    RESPOSNSIVE DESIGN FOR MOBILE
+   ==================================*/
+
+@media (max-width: 768px) {
+
+    /* == nav section == */
+
+    .nav-section{
+        padding: 8px;
+    }
+
+    .header-logo{
+        font-size: 10px;
+    }
+
+    .logo-p{ font-size: 8px; }
+
+    .nav-links{
+        display: none;
+    }
+
+    .header-button{
+        padding: 5px;
+    }
+
+    /* == hero section == */
+
+    .hero{
+        width: 100%;
+        min-width: 0;
+        min-height: 500px;
+        background-position: center;
+        padding: 20px 10%;
+    }
+
+    h1{ font-size: 45px; }
+    h2{ font-size: 40px; }
+
+    .hero-p_1{ font-size: 10px; }
+    .hero-p_2{ font-size: 7px; }
+
+    .hero-button_1{ padding: 10px; }
+    .hero-button_2{ padding: 10px; }
+
+    /* == services == */
+
+    h3{ font-size: 15px; }
+
+    .services{ padding: 15px; }
+
+    .services-grid{ grid-template-columns: 1fr; }
+
+    .card{
+        border-right: 0;
+        border-bottom: 2px solid chocolate;
+        padding: 20px 8%;
+    }
+    .card:last-child{ border-bottom: none;}
+
+    /* == specialties == */
+
+    .specialties{ padding: 12px; }
+    .specialties-title{ font-size: 12px; }
+
+    .food-grid{
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .food-card_image{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .food-card{
+        padding: 30px;
+        align-items: center;
+        h4{ font-size: 15px; }
+    }
+
+}
