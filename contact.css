@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 20px;
+}
+
+.header-logo{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-p{
+    font-size: 15px;
+    color: chocolate;
+    font-style: normal;
+}
+
+.nav-links{
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    gap: 20px;
+    color: chocolate;
+}
+.nav-links :hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+/* ====== main section ======*/
+
+.main{
+    min-height: 600px;
+    background-image: url(IMG-20260908-WA0000.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+}
+h2{
+    color: white;
+    font-family: sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+.main-paragraph{
+    color: chocolate;
+    font-family: sans-serif;
+    font-size: 20px;   
+}
+
+/* ===== form section ===== */
+
+.form{
+    padding: 25px;
+    background-color: whitesmoke;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+}
+
+.form-section{
+    background-color: white;
+    padding: 50px;
+    align-items: center;
+    display: block;
+    border-right: 1px solid chocolate;
+    h3{
+        color: black;
+        font-size: 40px;
+        font-family: sans-serif;
+    }
+    .form-section_p{
+        color: chocolate;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+    .form-input{
+        width: 100%;
+        padding: 8px 12px;
+        margin-bottom: 12px;
+        border: 1px solid chocolate;
+        border-radius: 5px;
+    }
+    .form-input:focus{
+        outline: none;
+        border-color: chocolate;
+        box-shadow: 0 0 0 3px chocolate;
+    }
+    .form-textarea{
+        width: 100%;
+        padding: 8px 12px;
+        margin-bottom: 12px;
+        border: 1px solid chocolate;
+        border-radius: 5px;
+    }
+    .form-textarea:focus{
+        outline: none;
+        border-color: chocolate;
+        box-shadow: 0 0 0 3px chocolate;
+    }
+    .form-input_button{
+        width: 100%;
+        padding: 8px 12px;
+        color: white;
+        background-color: chocolate;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.contact-section{
+    background-color: white;
+    padding: 50px;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    .contact-grid{
+        color: chocolate;
+        background-color: white;
+        padding: 20px 200px;
+        font-family: sans-serif;
+        font-size: 16px;
+        border: 1px solid chocolate;
+        border-radius: 10%;
+        margin-bottom: 15px;
+    }
+}
+
+/* =====footer section ===== */
+
+.footer{
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: chocolate;
+}

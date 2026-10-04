@@ -16,6 +16,7 @@
     padding: 20px;
 }
 
+
 .header-logo{
     font-family: sans-serif;
     font-size: 30px;
@@ -23,7 +24,18 @@
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    opacity: 0;
+    position: relative;
+    animation-name: header-logo;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
+@keyframes header-logo {
+    0% { right: -1700px; opacity: 0; }
+    100% { right: 0; opacity: 1; }
+}
+
 
 .logo-p{
     font-size: 15px;
@@ -38,7 +50,17 @@
     font-weight: bold;
     gap: 20px;
     color: chocolate;
+    opacity: 0;
+    animation-name: nav-links;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
+@keyframes nav-links {
+    0% { right: -1700px; opacity: 0; }
+    100% { right: 0; opacity: 1; }
+}
+
 .nav-links :hover{
     text-decoration: underline;
     color: whitesmoke;
@@ -93,20 +115,57 @@ h2{
     font-size: 70px;
 }
 .hero-p_1{
+    position: relative;
     font-family: sans-serif;
     color: chocolate;
     font-size: 25px;
     font-style: italic;
     text-transform: uppercase;
+    animation-name: hero-p_1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
+@keyframes hero-p_1 {
+    0% { top: -300px }
+    100% { top: 0 }
+}
+
 .hero-text{
     line-height: 0.95;
+    position: relative;
+    animation-name: hero-text;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
+@keyframes hero-text {
+    0% { left: -700px }
+    100% { left: 0; }
+}
+
 .hero-p_2{
     font-family: sans-serif;
     color: chocolate;
     font-size: 18px;
     font-weight: bold;
+    position: relative;
+    animation-name: hero-p_2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-p_2 {
+    0% { right: -1000px; }
+    100% { right: 0; }
+}
+
+.hero-buttons{
+    position: relative;
+    animation-name: hero-buttons;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-buttons {
+    0% { bottom: -1200px; }
+    100% { bottom: 0; }
 }
 
 .hero-button_1{
